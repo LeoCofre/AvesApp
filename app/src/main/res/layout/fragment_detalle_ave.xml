@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_ave_dos">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_cargando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:minWidth="150dp"
+            android:minHeight="150dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nombre_espanol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="@string/nombre_en_espanol"
+                android:textColor="#1B1004"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_en_ingles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/nombre_en_ingles"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombre_espanol" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nombre_en_ingles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_en_ingles"
+                android:textColor="#1B1004"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_name_en_ingles"
+                app:layout_constraintStart_toStartOf="@+id/tv_name_en_ingles"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_en_ingles" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_latin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/nombre_en_latin"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombre_espanol" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nombre_en_latin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_en_latin"
+                android:textColor="#1B1004"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_name_latin"
+                app:layout_constraintStart_toStartOf="@+id/tv_name_latin"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_latin" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_imagen_ave"
+                android:layout_width="370dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                android:src="@drawable/shimmer_fragment_detalle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombre_en_latin" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_titulo_descripcions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/descripcion"
+                android:textColor="#1B1004"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_titulo_habitat"
+                app:layout_constraintTop_toBottomOf="@+id/iv_imagen_ave" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_titulo_descripcions"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo_descripcions" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_titulo_habitat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/habitat"
+                android:textColor="#1B1004"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_habitad"
+                app:layout_constraintTop_toBottomOf="@+id/tv_descripcion" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_habitad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/habitad"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo_habitat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_titulo_sabias_que"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/sabias_qu"
+                android:textColor="#1B1004"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_habitad"
+                app:layout_constraintTop_toBottomOf="@+id/tv_habitad" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_didyouknow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/didyouknow"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_titulo_sabias_que"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo_sabias_que" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_titulo_tamanio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/tama_o"
+                android:textColor="#1B1004"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_size"
+                app:layout_constraintTop_toBottomOf="@+id/tv_didyouknow" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/size"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo_tamanio" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_titulo_especies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/especie"
+                android:textColor="#1B1004"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_species"
+                app:layout_constraintTop_toBottomOf="@+id/tv_size" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_species"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/species"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo_especies" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_fotoMapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_species" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_titulo_lugarDondeVive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/region_donde_habita"
+                android:textColor="#1B1004"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_title"
+                app:layout_constraintTop_toBottomOf="@+id/iv_fotoMapa" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/title"
+                android:textColor="#1B1004"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo_lugarDondeVive" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_volver_lista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#0B163C"
+                android:text="@string/volver_a_lista"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginUsuarioFragment">
+    <fragment
+        android:id="@+id/loginUsuarioFragment"
+        android:name="cl.desafiolatam.aves.login.presentation.LoginUsuarioFragment"
+        android:label="LoginUsuarioFragment">
+        <action
+            android:id="@+id/action_loginUsuarioFragment_to_registroUsuarioFragment2"
+            app:destination="@id/registroUsuarioFragment" />
+        <action
+            android:id="@+id/action_loginUsuarioFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroUsuarioFragment"
+        android:name="cl.desafiolatam.aves.registro.presentation.RegistroUsuarioFragment"
+        android:label="RegistroUsuarioFragment">
+        <action
+            android:id="@+id/action_registroUsuarioFragment_to_loginUsuarioFragment3"
+            app:destination="@id/loginUsuarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avesFragment"
+        android:name="cl.desafiolatam.aves.sessionlista.presentation.ui.AvesFragment"
+        android:label="AvesFragment">
+        <action
+            android:id="@+id/action_avesFragment_to_detalleAvesFragment"
+            app:destination="@id/detalleAvesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="cl.desafiolatam.aves.splash.presentation.SplashFragment"
+        android:label="SplashFragment">
+        <action
+            android:id="@+id/action_splashFragment_to_avesFragment"
+            app:destination="@id/avesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleAvesFragment"
+        android:name="cl.desafiolatam.aves.detalle.presentation.DetalleAvesFragment"
+        android:label="DetalleAvesFragment" />
+</navigation>

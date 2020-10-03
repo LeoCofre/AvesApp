@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "922902451188",
+    "firebase_url": "https://avesapp-b8f00.firebaseio.com",
+    "project_id": "avesapp-b8f00",
+    "storage_bucket": "avesapp-b8f00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922902451188:android:bc723fac89901a46f4dfa1",
+        "android_client_info": {
+          "package_name": "cl.desafiolatam.avesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922902451188-ntjelltoob8sid48fiql526u7ksquk98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYeXfQx9jh--TcrwrY4BxmhGMLFNZnGZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922902451188-ntjelltoob8sid48fiql526u7ksquk98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

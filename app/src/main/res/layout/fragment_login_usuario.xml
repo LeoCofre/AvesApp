@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_ave_fragment"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        android:id="@+id/tv_nombre_app"
+        android:layout_width="141dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="92dp"
+        android:gravity="right"
+        android:text="@string/las_aves_conectan_nuestro_mundo"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:contentDescription="@string/ingrese_email"
+        android:hint="@string/ingrese_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/ingrese_password"
+        android:hint="@string/ingresar_password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/iniciar_sesion"
+        android:textAllCaps="false"
+        android:background="#0B163C"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/et_clave"
+        app:layout_constraintStart_toStartOf="@+id/et_clave"
+        app:layout_constraintTop_toBottomOf="@+id/et_clave" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0B163C"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:text="@string/registro"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Login"
+        app:layout_constraintStart_toStartOf="@+id/btn_Login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
