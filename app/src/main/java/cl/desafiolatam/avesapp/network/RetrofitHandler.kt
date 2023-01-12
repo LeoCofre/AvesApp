@@ -8,7 +8,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object  RetrofitHandler {
+object RetrofitHandler {
 
     fun getRetrofit(): Retrofit {
         val interceptor = HttpLoggingInterceptor()
@@ -26,10 +26,11 @@ object  RetrofitHandler {
             .build()
     }
 
-    fun getAveApi() : AvesApi {
+    fun getAveApi(): AvesApi {
         return getRetrofit().create(AvesApi::class.java)
-        }
-    fun getDetalleApi():DetalleAveApi{
+    }
+
+    fun getDetalleApi(): DetalleAveApi {
         return getRetrofit().create(DetalleAveApi::class.java)
     }
 }

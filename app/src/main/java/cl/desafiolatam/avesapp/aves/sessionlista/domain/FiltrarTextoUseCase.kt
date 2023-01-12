@@ -1,7 +1,7 @@
 package cl.desafiolatam.aves.sessionlista.domain
 
-class FiltrarTextoUseCase (
+class FiltrarTextoUseCase(
     private val repository: AvesRepository
 ) {
-  //  suspend fun excecute(texto: String) = repository.filtrarPorTexto(texto)
+    //  suspend fun excecute(texto: String) = repository.filtrarPorTexto(texto)
 }

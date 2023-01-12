@@ -5,13 +5,13 @@ import cl.desafiolatam.avesapp.detalle.domain.DetalleAveRepository
 import cl.desafiolatam.avesapp.detalle.domain.model.DetalleAve
 
 
-class RemoteDetalleAveRepository  (
+class RemoteDetalleAveRepository(
     private val detalleAveApi: DetalleAveApi,
     private val detalleAveMapper: DetalleAveMapper
-): DetalleAveRepository {
+) : DetalleAveRepository {
 
 
-    override suspend fun obtenerDetalle(uid : String): DetalleAve {
+    override suspend fun obtenerDetalle(uid: String): DetalleAve {
         return detalleAveMapper.mapToEntity(detalleAveApi.getDetalleAveApi(uid))
 
     }

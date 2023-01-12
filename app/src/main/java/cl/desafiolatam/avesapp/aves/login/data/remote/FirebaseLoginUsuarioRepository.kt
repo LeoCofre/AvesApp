@@ -7,12 +7,12 @@ import kotlinx.coroutines.tasks.await
 
 class FirebaseLoginUsuarioRepository(
     private val firebaseAuth: FirebaseAuth
-) : LoginUsuarioRepository{
+) : LoginUsuarioRepository {
 
 
     override suspend fun doLogin(email: String, clave: String): LoginUsuario {
         firebaseAuth
-            .signInWithEmailAndPassword(email,clave)
+            .signInWithEmailAndPassword(email, clave)
             .await()
         val user = firebaseAuth.currentUser
         return LoginUsuario(user?.displayName ?: "", user?.email ?: "")
